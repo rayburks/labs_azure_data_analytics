@@ -1,0 +1,9 @@
+{
+	"name": "dev-datafactory-weu-df",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "60a4e9d8-b7b2-4a64-b6d7-3b806ee0c3a5",
+		"tenantId": "480348ed-5e0a-4c5c-8eb7-78dfd64b203d"
+	}
+}
