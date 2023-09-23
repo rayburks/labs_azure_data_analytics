@@ -1,0 +1,12 @@
+{
+	"name": "RestTextAnalyzer",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TextanalyzerAiCognitiveservices",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	}
+}
