@@ -1,0 +1,20 @@
+{
+	"name": "ConsumerReviewDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ImportStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products.csv",
+				"container": "import"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": []
+	}
+}
