@@ -1,62 +1,6 @@
 {
 	"name": "CopyDataReviews",
 	"properties": {
-		"activities": [
-			{
-				"name": "CopyCsv",
-				"type": "Copy",
-				"dependsOn": [],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [
-					{
-						"name": "Source",
-						"value": "import//Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products.csv"
-					},
-					{
-						"name": "Destination",
-						"value": "export//output.csv"
-					}
-				],
-				"typeProperties": {
-					"source": {
-						"type": "BinarySource",
-						"storeSettings": {
-							"type": "AzureBlobStorageReadSettings",
-							"recursive": true
-						},
-						"formatSettings": {
-							"type": "BinaryReadSettings"
-						}
-					},
-					"sink": {
-						"type": "BinarySink",
-						"storeSettings": {
-							"type": "AzureBlobStorageWriteSettings"
-						}
-					},
-					"enableStaging": false,
-					"validateDataConsistency": false
-				},
-				"inputs": [
-					{
-						"referenceName": "SourceDataset",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "DestinationDataset",
-						"type": "DatasetReference"
-					}
-				]
-			}
-		],
 		"annotations": []
 	}
 }
