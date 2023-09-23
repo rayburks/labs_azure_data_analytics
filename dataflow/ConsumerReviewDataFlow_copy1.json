@@ -1,0 +1,51 @@
+{
+	"name": "ConsumerReviewDataFlow_copy1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "ConsumerReview",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(output(",
+				"          id as string,",
+				"          dateAdded as string,",
+				"          dateUpdated as string,",
+				"          name as string,",
+				"          asins as string,",
+				"          brand as string,",
+				"          categories as string,",
+				"          primaryCategories as string,",
+				"          imageURLs as string,",
+				"          keys as string,",
+				"          manufacturer as string,",
+				"          manufacturerNumber as string,",
+				"          {reviews.date} as string,",
+				"          {reviews.dateAdded} as string,",
+				"          {reviews.dateSeen} as string,",
+				"          {reviews.doRecommend} as string,",
+				"          {reviews.id} as string,",
+				"          {reviews.numHelpful} as string,",
+				"          {reviews.rating} as string,",
+				"          {reviews.sourceURLs} as string,",
+				"          {reviews.text} as string,",
+				"          {reviews.title} as string,",
+				"          {reviews.username} as string,",
+				"          sourceURLs as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     limit: 100,",
+				"     ignoreNoFilesFound: true) ~> source1"
+			]
+		}
+	}
+}
