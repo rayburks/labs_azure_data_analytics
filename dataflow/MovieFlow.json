@@ -13,7 +13,11 @@
 				}
 			],
 			"sinks": [],
-			"transformations": [],
+			"transformations": [
+				{
+					"name": "selectTitle"
+				}
+			],
 			"scriptLines": [
 				"source(output(",
 				"          movies as string,",
@@ -24,7 +28,16 @@
 				"     ),",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     ignoreNoFilesFound: false) ~> sourceMovieCsv"
+				"     ignoreNoFilesFound: false) ~> sourceMovieCsv",
+				"sourceMovieCsv select(mapColumn(",
+				"          movies,",
+				"          Title,",
+				"          genresgenregenre,",
+				"          YEAR,",
+				"          Rating",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> selectTitle"
 			]
 		}
 	}
