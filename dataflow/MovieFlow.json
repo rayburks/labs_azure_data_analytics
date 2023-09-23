@@ -1,5 +1,5 @@
 {
-	"name": "MovieFlow_copy1",
+	"name": "MovieFlow",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
