@@ -43,7 +43,8 @@
 				"     ),",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     ignoreNoFilesFound: false) ~> source1"
+				"     limit: 100,",
+				"     ignoreNoFilesFound: true) ~> source1"
 			]
 		}
 	}
