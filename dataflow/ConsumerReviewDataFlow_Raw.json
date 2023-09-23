@@ -1,5 +1,5 @@
 {
-	"name": "ConsumerReviewDataFlow",
+	"name": "ConsumerReviewDataFlow_Raw",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
