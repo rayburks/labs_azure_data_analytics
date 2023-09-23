@@ -1,0 +1,120 @@
+{
+	"name": "ConsumerReview",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ImportStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products.csv",
+				"container": "import"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "dateAdded",
+				"type": "String"
+			},
+			{
+				"name": "dateUpdated",
+				"type": "String"
+			},
+			{
+				"name": "name",
+				"type": "String"
+			},
+			{
+				"name": "asins",
+				"type": "String"
+			},
+			{
+				"name": "brand",
+				"type": "String"
+			},
+			{
+				"name": "categories",
+				"type": "String"
+			},
+			{
+				"name": "primaryCategories",
+				"type": "String"
+			},
+			{
+				"name": "imageURLs",
+				"type": "String"
+			},
+			{
+				"name": "keys",
+				"type": "String"
+			},
+			{
+				"name": "manufacturer",
+				"type": "String"
+			},
+			{
+				"name": "manufacturerNumber",
+				"type": "String"
+			},
+			{
+				"name": "reviews.date",
+				"type": "String"
+			},
+			{
+				"name": "reviews.dateAdded",
+				"type": "String"
+			},
+			{
+				"name": "reviews.dateSeen",
+				"type": "String"
+			},
+			{
+				"name": "reviews.doRecommend",
+				"type": "String"
+			},
+			{
+				"name": "reviews.id",
+				"type": "String"
+			},
+			{
+				"name": "reviews.numHelpful",
+				"type": "String"
+			},
+			{
+				"name": "reviews.rating",
+				"type": "String"
+			},
+			{
+				"name": "reviews.sourceURLs",
+				"type": "String"
+			},
+			{
+				"name": "reviews.text",
+				"type": "String"
+			},
+			{
+				"name": "reviews.title",
+				"type": "String"
+			},
+			{
+				"name": "reviews.username",
+				"type": "String"
+			},
+			{
+				"name": "sourceURLs",
+				"type": "String"
+			}
+		]
+	}
+}
