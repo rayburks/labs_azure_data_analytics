@@ -1,5 +1,5 @@
 {
-	"name": "ConsumerReviewDataFlow_copy1",
+	"name": "ConsumerReviewDataFlow",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
